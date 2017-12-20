@@ -17,12 +17,12 @@ Feature: Orchextra can execute actions
     Then I should see notification with title: "Open Orchextra" URL and body: "Go to Orchextra site?"
 
   Scenario: The app get a open url in webview action and I should see the content in a webview
-    Then I should see a webview with title: "orchextra.io"
     When The app get a "webview" action with url "https://www.orchextra.io/"
+    Then I should see a webview with title: "orchextra.io"
 
   Scenario: The app get a open url in browser action and I the browser should be launched
     Then I should see the browser
-    When The app get a "webview" action with url "https://www.orchextra.io/"
+    When The app get a "browser" action with url "https://www.orchextra.io/"
 
   Scenario: The app get a open content action and I should see the Deep link
     When The app get a "custom_scheme" action with url "ocm://welcome"
@@ -38,4 +38,4 @@ Feature: Orchextra can execute actions
 
   Scenario: The app get a do nothing action and I should see nothing
     When The app get a nothing action
-    Then I should see nothing
+    Then I should see "nothing"
