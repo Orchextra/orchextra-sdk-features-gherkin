@@ -21,8 +21,9 @@ Feature: Orchextra can execute actions
     Then I should see a webview with title: "orchextra.io"
 
   Scenario: The app get a open url in browser action and I the browser should be launched
-    Then I should see the browser
     When The app get a "browser" action with url "https://www.orchextra.io/"
+    Then I should see the browser
+
 
   Scenario: The app get a open content action and I should see the Deep link
     When The app get a "custom_scheme" action with url "ocm://welcome"
