@@ -38,5 +38,5 @@ Feature: Orchextra can execute actions
     Then I should see the scanner
 
   Scenario: The app get a do nothing action and I should see nothing
-    When The app get a nothing action
+    When The app get a "nothing" action
     Then I should see "nothing"
