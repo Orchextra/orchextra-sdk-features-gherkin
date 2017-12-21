@@ -1,4 +1,5 @@
 Feature: Orchextra can execute actions
+
   Actions currently supported:
   1. Open URL/Promo (webview or browser)
   2. Deep Link/Open content
@@ -23,7 +24,6 @@ Feature: Orchextra can execute actions
   Scenario: The app get a open url in browser action and I the browser should be launched
     When The app get a "browser" action with url "https://www.orchextra.io/"
     Then I should see the browser
-
 
   Scenario: The app get a open content action and I should see the Deep link
     When The app get a "custom_scheme" action with url "ocm://welcome"
