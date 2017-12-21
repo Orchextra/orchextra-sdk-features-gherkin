@@ -6,4 +6,4 @@ Feature: Unsuccessful Login
     When I fill "apiKey" with "fake_apiKey"
     And I fill "apiSecretpiKey" with "fake_apiSecret"
     And I press "start button"
-    Then I should see login error
+    Then I should see "login error"
