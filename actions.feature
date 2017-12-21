@@ -14,8 +14,8 @@ Feature: Orchextra can execute actions
     Given The app logged
 
   Scenario: The app get a action with notification and I should see it
-    When The app get any action with notification title: "Open Orchextra" URL and body: "Go to Orchextra site?"
-    Then I should see notification with title: "Open Orchextra" URL and body: "Go to Orchextra site?"
+    When The app get any action with notification title: "Open Orchextra URL" and body: "Go to Orchextra site?"
+    Then I should see notification with title: "Open Orchextra URL" and body: "Go to Orchextra site?"
 
   Scenario: The app get a open url in webview action and I should see the content in a webview
     When The app get a "webview" action with url "https://www.orchextra.io/"
@@ -30,8 +30,8 @@ Feature: Orchextra can execute actions
     Then I should see the Deep link
 
   Scenario: The app get a notification action and I should see it
-    When The app get a "notification" action with notification title: "Open Orchextra" URL and body: "Go to Orchextra site?"
-    Then I should see notification with title: "Open Orchextra" URL and body: "Go to Orchextra site?"
+    When The app get a "notification" action with notification title: "Open Orchextra URL" and body: "Go to Orchextra site?"
+    Then I should see notification with title: "Open Orchextra URL" and body: "Go to Orchextra site?"
 
   Scenario: The app get a open scanner action and the scanner should be open
     When The app get a "scanner" action
